@@ -1,6 +1,6 @@
 # ☁️ AWS Cloud Deployment: Resume-in-a-Box
 
-This project focuses on the end-to-end deployment of a web application on **Amazon Web Services (AWS)**. [cite_start]It demonstrates infrastructure provisioning, Linux server administration, and cloud-native hosting practices[cite: 14, 15].
+This project focuses on the end-to-end deployment of a web application on **Amazon Web Services (AWS)**. It demonstrates infrastructure provisioning, Linux server administration, and cloud-native hosting practices.
 
 ## 🏗️ Infrastructure Architecture
 * **Cloud Provider:** Amazon Web Services (AWS).
@@ -19,7 +19,7 @@ The instance was launched within the AWS console, selecting the Amazon Linux AMI
 * **Security Groups:** Configured to allow **Port 80 (HTTP)** for public web traffic and **Port 22 (SSH)** for administrative access.
 
 ### 2. Server Bootstrapping (Linux/Apache)
-Once connected via SSH[cite: 142], the following commands were executed to turn the instance into a functional web server:
+Once connected via SSH, the following commands were executed to turn the instance into a functional web server:
 
 ```bash
 # Install Apache HTTP Server
