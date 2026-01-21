@@ -28,3 +28,11 @@ sudo yum install httpd -y
 # Start and enable the service to persist through reboots
 sudo systemctl start httpd
 sudo systemctl enable httpd
+
+3. Production Deployment via SCP
+The index.html file was transferred from the local development environment to the Apache production directory (/var/www/html/) using the Secure Copy Protocol:
+
+
+Bash
+
+scp -i CloudeLabKey.pem index.html ec2-user@100.53.20.251:/var/www/html/
