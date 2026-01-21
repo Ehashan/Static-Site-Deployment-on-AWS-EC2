@@ -29,10 +29,17 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 
-3. Production Deployment via SCP
-The index.html file was transferred from the local development environment to the Apache production directory (/var/www/html/) using the Secure Copy Protocol:
 
+### 3. Production Deployment via SCP
+* [cite_start] **The index.html file was transferred from the local development environment to the Apache production directory (/var/www/html/) using the Secure Copy Protocol:**
 
-Bash
-
+```bash
 scp -i CloudeLabKey.pem index.html ec2-user@100.53.20.251:/var/www/html/
+
+```
+
+## 🔍 Validation
+[cite_start] Public Accessibility: Verified successful site loading via the Public IPv4 address.
+
+
+Service Verification: Confirmed httpd.service is active and listening on Port 80.
